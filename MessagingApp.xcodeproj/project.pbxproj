@@ -15,6 +15,10 @@
 		FA77BC7826DE59DF00FA4DEA /* UISizeConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC7726DE59DF00FA4DEA /* UISizeConstant.swift */; };
 		FA77BC7A26DE59F200FA4DEA /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC7926DE59F200FA4DEA /* Images.swift */; };
 		FA77BC7D26DE5A3D00FA4DEA /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC7C26DE5A3D00FA4DEA /* Localizable.swift */; };
+		FA77BC8026DE5F6800FA4DEA /* ImageOrNameInitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC7F26DE5F6800FA4DEA /* ImageOrNameInitalView.swift */; };
+		FA77BC8326DE641400FA4DEA /* View+Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC8226DE641400FA4DEA /* View+Shape.swift */; };
+		FA77BC8526DE66A700FA4DEA /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC8426DE66A700FA4DEA /* UserListCell.swift */; };
+		FA77BC8926DE693500FA4DEA /* MessageDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC8826DE693500FA4DEA /* MessageDetailList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		FA77BC7726DE59DF00FA4DEA /* UISizeConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISizeConstant.swift; sourceTree = "<group>"; };
 		FA77BC7926DE59F200FA4DEA /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		FA77BC7C26DE5A3D00FA4DEA /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		FA77BC7F26DE5F6800FA4DEA /* ImageOrNameInitalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOrNameInitalView.swift; sourceTree = "<group>"; };
+		FA77BC8226DE641400FA4DEA /* View+Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Shape.swift"; sourceTree = "<group>"; };
+		FA77BC8426DE66A700FA4DEA /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		FA77BC8826DE693500FA4DEA /* MessageDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,8 @@
 		FA77BC6626DE590900FA4DEA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FA77BC8726DE691800FA4DEA /* Messages */,
+				FA77BC8626DE66B000FA4DEA /* User */,
 				FA77BC7E26DE5A5200FA4DEA /* CustomViews */,
 				FA77BC7B26DE5A0300FA4DEA /* Constants */,
 				FA77BC6526DE58EB00FA4DEA /* Main */,
@@ -128,6 +138,7 @@
 		FA77BC6826DE593400FA4DEA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				FA77BC8126DE5FF800FA4DEA /* Extensions */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -154,8 +165,33 @@
 		FA77BC7E26DE5A5200FA4DEA /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				FA77BC7F26DE5F6800FA4DEA /* ImageOrNameInitalView.swift */,
+				FA77BC8226DE641400FA4DEA /* View+Shape.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FA77BC8126DE5FF800FA4DEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA77BC8626DE66B000FA4DEA /* User */ = {
+			isa = PBXGroup;
+			children = (
+				FA77BC8426DE66A700FA4DEA /* UserListCell.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		FA77BC8726DE691800FA4DEA /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				FA77BC8826DE693500FA4DEA /* MessageDetailList.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,11 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA77BC8526DE66A700FA4DEA /* UserListCell.swift in Sources */,
+				FA77BC8926DE693500FA4DEA /* MessageDetailList.swift in Sources */,
 				FA77BC7826DE59DF00FA4DEA /* UISizeConstant.swift in Sources */,
 				FA77BC7A26DE59F200FA4DEA /* Images.swift in Sources */,
 				FA77BC7D26DE5A3D00FA4DEA /* Localizable.swift in Sources */,
 				FA77BC5926DE587A00FA4DEA /* ContentView.swift in Sources */,
 				FA77BC5726DE587A00FA4DEA /* MessagingAppApp.swift in Sources */,
+				FA77BC8026DE5F6800FA4DEA /* ImageOrNameInitalView.swift in Sources */,
+				FA77BC8326DE641400FA4DEA /* View+Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

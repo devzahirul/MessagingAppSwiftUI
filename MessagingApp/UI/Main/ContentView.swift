@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+        List {
+            ForEach(0..<100) { i in
+                NavigationLink(destination: MessageDetailList()) {
+                UserListCell()
+                }
+            }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(Text("Message List"))
+        }
     }
 }
 
