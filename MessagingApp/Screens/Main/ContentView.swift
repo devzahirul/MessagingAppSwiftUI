@@ -10,13 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-        List {
-            ForEach(0..<100) { i in
-                NavigationLink(destination: MessageDetailList()) {
-                UserListCell()
-                }
-            }
-        }
+       UserWithLastMessageList()
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(Text("Message List"))
         }

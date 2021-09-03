@@ -17,8 +17,14 @@
 		FA77BC7D26DE5A3D00FA4DEA /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC7C26DE5A3D00FA4DEA /* Localizable.swift */; };
 		FA77BC8026DE5F6800FA4DEA /* ImageOrNameInitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC7F26DE5F6800FA4DEA /* ImageOrNameInitalView.swift */; };
 		FA77BC8326DE641400FA4DEA /* View+Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC8226DE641400FA4DEA /* View+Shape.swift */; };
-		FA77BC8526DE66A700FA4DEA /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC8426DE66A700FA4DEA /* UserListCell.swift */; };
+		FA77BC8526DE66A700FA4DEA /* UserWithLastMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC8426DE66A700FA4DEA /* UserWithLastMessageCell.swift */; };
 		FA77BC8926DE693500FA4DEA /* MessageDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77BC8826DE693500FA4DEA /* MessageDetailList.swift */; };
+		FA85C1EE26E1F08000B7AE19 /* UserWithLastMessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85C1ED26E1F08000B7AE19 /* UserWithLastMessageList.swift */; };
+		FA85C1F226E1F1D100B7AE19 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85C1F126E1F1D100B7AE19 /* Message.swift */; };
+		FA85C1F426E1F1E400B7AE19 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85C1F326E1F1E400B7AE19 /* User.swift */; };
+		FA85C1F626E22E8900B7AE19 /* MessageTypingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85C1F526E22E8900B7AE19 /* MessageTypingView.swift */; };
+		FA85C1F826E2375D00B7AE19 /* MessageInputOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85C1F726E2375D00B7AE19 /* MessageInputOptionsView.swift */; };
+		FA85C1FA26E23F2100B7AE19 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85C1F926E23F2100B7AE19 /* AppListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +52,14 @@
 		FA77BC7C26DE5A3D00FA4DEA /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		FA77BC7F26DE5F6800FA4DEA /* ImageOrNameInitalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOrNameInitalView.swift; sourceTree = "<group>"; };
 		FA77BC8226DE641400FA4DEA /* View+Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Shape.swift"; sourceTree = "<group>"; };
-		FA77BC8426DE66A700FA4DEA /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		FA77BC8426DE66A700FA4DEA /* UserWithLastMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWithLastMessageCell.swift; sourceTree = "<group>"; };
 		FA77BC8826DE693500FA4DEA /* MessageDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailList.swift; sourceTree = "<group>"; };
+		FA85C1ED26E1F08000B7AE19 /* UserWithLastMessageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWithLastMessageList.swift; sourceTree = "<group>"; };
+		FA85C1F126E1F1D100B7AE19 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FA85C1F326E1F1E400B7AE19 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA85C1F526E22E8900B7AE19 /* MessageTypingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTypingView.swift; sourceTree = "<group>"; };
+		FA85C1F726E2375D00B7AE19 /* MessageInputOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputOptionsView.swift; sourceTree = "<group>"; };
+		FA85C1F926E23F2100B7AE19 /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				FA77BC6826DE593400FA4DEA /* Helper */,
+				FA77BC6626DE590900FA4DEA /* Screens */,
 				FA77BC6726DE591F00FA4DEA /* DataSource */,
-				FA77BC6626DE590900FA4DEA /* UI */,
 				FA77BC5626DE587A00FA4DEA /* MessagingAppApp.swift */,
 				FA77BC5A26DE587C00FA4DEA /* Assets.xcassets */,
 				FA77BC5F26DE587C00FA4DEA /* Info.plist */,
@@ -116,7 +128,7 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		FA77BC6626DE590900FA4DEA /* UI */ = {
+		FA77BC6626DE590900FA4DEA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				FA77BC8726DE691800FA4DEA /* Messages */,
@@ -125,12 +137,14 @@
 				FA77BC7B26DE5A0300FA4DEA /* Constants */,
 				FA77BC6526DE58EB00FA4DEA /* Main */,
 			);
-			path = UI;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		FA77BC6726DE591F00FA4DEA /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				FA85C1F026E1F1B200B7AE19 /* Message */,
+				FA85C1EF26E1F19D00B7AE19 /* User */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -167,6 +181,8 @@
 			children = (
 				FA77BC7F26DE5F6800FA4DEA /* ImageOrNameInitalView.swift */,
 				FA77BC8226DE641400FA4DEA /* View+Shape.swift */,
+				FA85C1F526E22E8900B7AE19 /* MessageTypingView.swift */,
+				FA85C1F926E23F2100B7AE19 /* AppListView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -181,7 +197,8 @@
 		FA77BC8626DE66B000FA4DEA /* User */ = {
 			isa = PBXGroup;
 			children = (
-				FA77BC8426DE66A700FA4DEA /* UserListCell.swift */,
+				FA77BC8426DE66A700FA4DEA /* UserWithLastMessageCell.swift */,
+				FA85C1ED26E1F08000B7AE19 /* UserWithLastMessageList.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -190,8 +207,25 @@
 			isa = PBXGroup;
 			children = (
 				FA77BC8826DE693500FA4DEA /* MessageDetailList.swift */,
+				FA85C1F726E2375D00B7AE19 /* MessageInputOptionsView.swift */,
 			);
 			path = Messages;
+			sourceTree = "<group>";
+		};
+		FA85C1EF26E1F19D00B7AE19 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				FA85C1F326E1F1E400B7AE19 /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		FA85C1F026E1F1B200B7AE19 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				FA85C1F126E1F1D100B7AE19 /* Message.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,12 +327,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA77BC8526DE66A700FA4DEA /* UserListCell.swift in Sources */,
+				FA77BC8526DE66A700FA4DEA /* UserWithLastMessageCell.swift in Sources */,
 				FA77BC8926DE693500FA4DEA /* MessageDetailList.swift in Sources */,
+				FA85C1FA26E23F2100B7AE19 /* AppListView.swift in Sources */,
+				FA85C1F826E2375D00B7AE19 /* MessageInputOptionsView.swift in Sources */,
 				FA77BC7826DE59DF00FA4DEA /* UISizeConstant.swift in Sources */,
+				FA85C1F626E22E8900B7AE19 /* MessageTypingView.swift in Sources */,
 				FA77BC7A26DE59F200FA4DEA /* Images.swift in Sources */,
+				FA85C1EE26E1F08000B7AE19 /* UserWithLastMessageList.swift in Sources */,
 				FA77BC7D26DE5A3D00FA4DEA /* Localizable.swift in Sources */,
+				FA85C1F226E1F1D100B7AE19 /* Message.swift in Sources */,
 				FA77BC5926DE587A00FA4DEA /* ContentView.swift in Sources */,
+				FA85C1F426E1F1E400B7AE19 /* User.swift in Sources */,
 				FA77BC5726DE587A00FA4DEA /* MessagingAppApp.swift in Sources */,
 				FA77BC8026DE5F6800FA4DEA /* ImageOrNameInitalView.swift in Sources */,
 				FA77BC8326DE641400FA4DEA /* View+Shape.swift in Sources */,

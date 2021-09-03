@@ -9,7 +9,13 @@ import SwiftUI
 
 struct MessageDetailList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            
+            MessageTypingView()
+                .padding(.bottom, 5.0)
+            
+        }
     }
 }
 

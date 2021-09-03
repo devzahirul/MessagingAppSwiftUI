@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ImageOrNameInitalView: View {
+    //MARK:- Propertices
+    var name: String?
+    var photoURL: String?
+    
+    //MARK:- UI
     var body: some View {
         VStack {
             Text("ZI")

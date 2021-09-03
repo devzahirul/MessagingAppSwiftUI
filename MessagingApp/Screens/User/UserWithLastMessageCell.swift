@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct UserListCell: View {
+struct UserWithLastMessageCell: View {
     var body: some View {
-        VStack {
-            HStack(alignment: .top) {
+        VStack(alignment: .leading) {
+            HStack {
                 ImageOrNameInitalView()
-                    .frame(width: 56, height: 56)
+                    .frame(width: 36, height: 36)
                     .circle(Color.red)
                 
                 VStack(alignment: .leading) {
@@ -30,14 +30,14 @@ struct UserListCell: View {
     }
 }
 
-struct UserListCell_Previews: PreviewProvider {
+struct UserWithLastMessageCell_Previews: PreviewProvider {
     static var previews: some View {
         List {
-            UserListCell()
-            UserListCell()
-            UserListCell()
-            UserListCell()
-            UserListCell()
+            UserWithLastMessageCell()
+            UserWithLastMessageCell()
+            UserWithLastMessageCell()
+            UserWithLastMessageCell()
+            UserWithLastMessageCell()
         }
     }
 }
